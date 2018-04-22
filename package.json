@@ -1,0 +1,34 @@
+{
+  "name": "gql-blog",
+  "version": "1.0.0",
+  "main": "build/main",
+  "license": "MIT",
+  "scripts": {
+    "start": "node build/main",
+    "dev": "backpack dev",
+    "build": "backpack build",
+    "flow": "flow"
+  },
+  "dependencies": {
+    "dotenv": "^5.0.1",
+    "koa": "^2.5.0",
+    "koa-compose": "^4.0.0",
+    "koa-router": "^7.4.0",
+    "source-map-support": "^0.5.3"
+  },
+  "author": {
+    "name": "Gegham Samvelyan",
+    "github": "https://github.com/vamosgs"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.40",
+    "@babel/plugin-transform-flow-strip-types": "^7.0.0-beta.40",
+    "babel-eslint": "^8.2.2",
+    "backpack-core": "^0.5.0",
+    "eslint": "^4.18.2",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-flowtype": "^2.46.1",
+    "eslint-plugin-import": "^2.9.0",
+    "flow-bin": "^0.66.0"
+  }
+}

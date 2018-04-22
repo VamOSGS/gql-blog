@@ -1,0 +1,14 @@
+{
+  "parser": "babel-eslint",
+  "extends": ["plugin:flowtype/recommended", "airbnb-base"],
+  "plugins": ["flowtype"],
+  "rules": {
+    "linebreak-style": "off",
+    "require-jsdoc": "off",
+    "no-unused-vars": "warn",
+    "flowtype/boolean-style": "off",
+    "no-console": "off",
+    "global-require": "off",
+    "object-curly-spacing": "off"
+  }
+}
