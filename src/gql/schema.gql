@@ -1,0 +1,27 @@
+type Post {
+  title: String!
+  content: String!
+  id: ID!
+  author: User
+  public: Boolean!
+}
+
+enum Public {
+  Boolean
+}
+
+type User {
+  fullname: String!
+  username: String!
+  age: Int
+}
+
+input PostInput {
+  title: String!
+  public: Boolean = true
+}
+
+type Query {
+  post(id: ID!): Post!
+  posts(public: Public): [Post]
+}

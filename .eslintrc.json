@@ -3,12 +3,12 @@
   "extends": ["plugin:flowtype/recommended", "airbnb-base"],
   "plugins": ["flowtype"],
   "rules": {
-    "linebreak-style": "off",
-    "require-jsdoc": "off",
+    "require-jsdoc": 0,
     "no-unused-vars": "warn",
-    "flowtype/boolean-style": "off",
-    "no-console": "off",
-    "global-require": "off",
-    "object-curly-spacing": "off"
+    "flowtype/boolean-style": 0,
+    "no-console": 0,
+    "global-require": 0,
+    "object-curly-spacing": 0,
+    "eqeqeq": 0
   }
 }
