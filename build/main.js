@@ -167,14 +167,15 @@ const db = __webpack_require__(11);
 
 module.exports = {
   post: ({ id }) => db.posts.find(post => post.id == id),
-  posts: ({ status }) => db.posts.filter(post => post.public == status)
+  posts: ({ author }) => db.posts.filter(post => post.author == author)
+  // posts: param => console.log(param),
 };
 
 /***/ }),
 /* 11 */
 /***/ (function(module, exports) {
 
-module.exports = {"posts":[{"title":"Post 1","id":1,"public":true,"content":"sheets containing Lorem Ipsum passages, and moresheets containing Lorem Ipsum passages, and more sheets containing Lorem Ipsum passages, and more sheets containing Lorem Ipsum passages, and more"},{"title":"Post 2","id":2,"public":true,"content":"sheets containing Lorem Ipsum passages, and moresheets containing Lorem Ipsum passages, and more sheets containing Lorem Ipsum passages, and more sheets containing Lorem Ipsum passages, and more"},{"title":"Post 2","id":3,"public":false,"content":"sheets containing Lorem Ipsum passages, and moresheets containing Lorem Ipsum passages, and more sheets containing Lorem Ipsum passages, and more sheets containing Lorem Ipsum passages, and more"}]}
+module.exports = {"posts":[{"title":"Post 1","id":1,"public":true,"author":"vamosgs","content":"sheets containing Lorem Ipsum passages, and moresheets containing Lorem Ipsum passages, and more sheets containing Lorem Ipsum passages, and more sheets containing Lorem Ipsum passages, and more"},{"title":"Post 2","id":2,"author":"vamosgs","public":true,"content":"sheets containing Lorem Ipsum passages, and moresheets containing Lorem Ipsum passages, and more sheets containing Lorem Ipsum passages, and more sheets containing Lorem Ipsum passages, and more"},{"title":"Post 3","id":3,"author":"admin","public":false,"content":"sheets containing Lorem Ipsum passages, and moresheets containing Lorem Ipsum passages, and more sheets containing Lorem Ipsum passages, and more sheets containing Lorem Ipsum passages, and more"}]}
 
 /***/ }),
 /* 12 */

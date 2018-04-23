@@ -6,10 +6,6 @@ type Post {
   public: Boolean!
 }
 
-enum Public {
-  Boolean
-}
-
 type User {
   fullname: String!
   username: String!
@@ -23,5 +19,5 @@ input PostInput {
 
 type Query {
   post(id: ID!): Post!
-  posts(public: Public): [Post]
+  posts(author: String): [Post]
 }
